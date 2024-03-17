@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+ul li {
+  list-style: none;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.ligth {
+  color: #1b1b1b;
+  background-color: #fff;
+}
+.darktheme {
+  color: #fff !important;
+  background-color: #1b1b1b !important;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  transition: 0.4s;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  gap: 8px;
+  white-space: nowrap;
+}
+.container {
+  width: 100%;
+  padding: 0 5.124vw;
+}
+.column-item {
+  color: #d27722;
+}
+.main-color-icon {
+  color: #d27722;
+}
+.mt-section {
+  margin-top: 94px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-bw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-al-c {
+  display: flex;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.section-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom:56px;
+}
+.section-title .title h1 {
+  font-size: 39px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+/* ====================== BUTTONS ================= */
+.btn-primary {
+  background-color: #d27722;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: transparent;
+  color: #d27722;
+  border: 1px solid #d27722;
+}
+/* ==================== NAVBAR ===================== */
+header {
+  height: 100vh;
+}
+#navbar {
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid #ffdbb8;
+  position: fixed;
+  color: inherit;
+  z-index: 100;
+  background-color: #fff;
+}
+.nav-items {
+  width: fit-content;
+  gap: 2.34vw;
+}
+.nav-links {
+  gap: 24px;
+}
+.nav-links li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+.nav-links li img {
+  width: 20px;
+}
+.nav-actions {
+  width: fit-content;
+  gap: 1.75vw;
+}
+.nav-actions > div {
+  gap: 20px;
+}
+.nav-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+#themeToggle {
+  gap: 6px !important;
+  cursor: pointer;
+}
+.mobile-nav{
+  height: 100vh;
+  width: 310px;
+  position: fixed;
+  z-index: 2000;
+  background-color: #d27722;
+  right: 0;
+  padding: 20px;
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  transform: translateX(100%);
+  transition: all 0.25s ease-out;
+}
+.mobile-nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+.mobile-nav ul li a{
+font-size: 20px;
+color: #fff;
+display: block;
+padding: 10px;
+}
+.mobile-nav .nav-select{
+  font-size: 20px;
+color: #fff;
+padding: 10px;
+gap: 22px;
+}
+/* ==================== HERO SECTION ===================== */
+#hero .container {
+  display: flex;
+  align-items: center;
+  margin-top: 13vh;
+  min-height: calc(100vh - 13vh);
+}
+#hero {
+  height: 100%;
+  display: flex;
+}
+.hero-content {
+  gap: 24px;
+}
+.hero-image {
+  width: 613px;
+}
+.hero-image img {
+  width: 100%;
+}
+.hero-content h1 {
+  font-size: 54px;
+  line-height: 110%;
+}
+.hero-btns {
+  gap: 20px;
+}
+/* ==================== EXPLORE & LEARN ==================== */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-container p {
+  /* color: #252422; */
+  font-weight: 500;
+}
+.explore-content {
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.explore-content .card {
+  width: 392px;
+  border-radius: 16px;
+  border: 1px solid #ffdbb8;
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 28px;
+}
+.explore-card-text > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.explore-card-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+/* ====================  OUR UNIQUE BENEFITS ==================== */
+.benefits-content {
+  flex-wrap: wrap;
+  row-gap: 32px;
+}
+.benefits-content .card {
+  width: 331px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+.card-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d27722;
+}
+.benefits-content .line {
+  position: relative;
+}
+.benefits-content .line::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 42px;
+  background-color: #d27722;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* ====================  OTHER ADVANTAGES ==================== */
+.advantages-content {
+  margin-top: 94px;
+}
+.advantages-content .image {
+  width: 563px;
+}
+.advantages-content .content {
+  width: 50%;
+}
+.advantages-content .image img {
+  width: 100%;
+  border-radius: 24px;
+}
+.advantages-content .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.advantages-content h2 {
+  font-size: 39px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.advantages-content .cards .card {
+  border-radius: 16px;
+  border: 1px solid #ffdbb8;
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 16px;
+}
+.advantages-content .cards .card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+/* ====================  BECOME A CHEF ==================== */
+.become-chef-content .image {
+  width: 563px;
+}
+.become-chef-content .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.become-chef-content .image img {
+  width: 100%;
+  border-radius: 24px;
+}
+.become-chef-content h2 {
+  font-size: 39px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.become-chef-content .content ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+/* ====================  BECOME A STUDENT ==================== */
+.become_student-content {
+  display: flex;
+  height: auto;
+}
+.become_student-content .image {
+  width: 50%;
+}
+.become_student-content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.become_student-content .content {
+  width: 50%;
+  background-color: #d27722;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 31px;
+}
+.become_student-content .content h2 {
+  color: #fff;
+  font-size: 39px;
+  font-weight: 600;
+}
+.become_student-content .content p{
+  color: #fff;
+}
+.become_student-content .content ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.become_student-content .btn {
+  width: 130px;
+  height: 36px;
+  background-color: transparent;
+  border: 2px solid #ffdbb8;
+  color: #ffdbb8;
+}
+/* ====================  COOK BLOG  ==================== */
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog-content h3 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.blog-content .options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.blog-content .options ul {
+  width: 479px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.blog-content .options ul li {
+  width: fit-content;
+  padding: 4px 24px;
+  border: 1px solid #ffdbb8;
+  color: #d27722;
+  font-size: 18px;
+  border-radius: 58px;
+  cursor: pointer;
+}
+.blog-content .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.blog-content .cards .card {
+  width: 290px;
+  border: 1px solid #ffdbb8;
+  padding-bottom: 20px;
+}
+.blog-content .cards .card > div {
+  padding: 20px 25px 0;
+}
+.blog-content .cards .card > div h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 9px;
+}
+.blog-content .cards .card > div > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.blog-content .cards .card .card-img {
+  width: 100%;
+}
+/* =========================== FOOTER ============================= */
+footer {
+  background-color: #d27722;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 5.124vw;
+}
+footer p{
+  color: #fff;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.social-icons img {
+  cursor: pointer;
+}
+/* =========================== Responsive Style  ============================= */
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 1367px) {
+  .hero-content h1 {
+    font-size: 3.8vw;
+  }
+  .hero-content,
+  .hero-image {
+    width: 50%;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+  .advantages-content .image,
+  .become-chef-content .image {
+    width: 45%;
+  }
+}
+/* Medium screens */
+@media screen and (max-width: 1024px) {
+  .explore-content .card,
+  .explore-card-text,
+  .advantages-content .image,
+  .become-chef-content .content,
+  .become_student-content .content,
+  .become-chef-content .image,
+  .become_student-content .image,
+  .advantages-content .content,
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+  .nav-actions,
+  .nav-links,
+  .nav-items span,
+  .search-container,
+  .benefits-content .line {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    align-items: center;
+  }
+  .hero-image,
+  .advantages-content .content {
+    order: -1;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .section-title .title h1 {
+    font-size: 30px;
+  }
+  .advantages-content,
+  .become-chef-content,
+  .become_student-content,
+  .blog-content {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .become_student-content {
+    row-gap: 0;
+  }
+  .benefits-content {
+    justify-content: center;
+  }
+}
+/* Small Screens */
+@media screen and (max-width: 768px) {
+  .section-title {
+    margin: 64px 0 40px 0;
+  }
+  .mt-section {
+    margin-top: 64px;
+  }
+  #hero .container {
+    margin-top: 11vh;
+    min-height: calc(100vh - 11vh);
+  }
+  #navbar {
+    height: 65px;
+  }
+  .become-chef-content button,
+  .become_student-content button,
+  .benefits-content .card,
+  .hero-btns button,
+  .hero-btns,
+  .blog-content .options ul {
+    width: 100%;
+  }
+  .hero-content h1 {
+    line-height: 130%;
+  }
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    gap: 8px;
+  }
+  .explore-content .card {
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .explore-content .card .explore-card-icon {
+    width: 42px;
+  }
+  .explore-card-text h3 {
+    font-size: 20px;
+  }
+  .advantages-content .cards .card {
+    flex-direction: column;
+  }
+  .advantages-content .cards .card img {
+    width: 48px;
+    height: 48px;
+  }
+  .become_student-content .content {
+    padding: 42px 33px;
+  }
+  .blog-content .options ul {
+    gap: 8px;
+  }
+}
